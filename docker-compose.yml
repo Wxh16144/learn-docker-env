@@ -1,0 +1,6 @@
+services:
+  test-env:
+    build: .
+    environment:
+      - TEST_ENV_VAR=HelloWorld
+      - ANOTHER_ENV_VAR=ThisIsATest
