@@ -116,6 +116,14 @@ Container is running. Press Ctrl+C to exit.
 
 ## 其他
 
+### 将宿主机的环境变量全部传递给容器
+
+```bash
+docker run -it --rm \
+  --env-file <(env) \
+  wxh16144/learn-docker-env:latest
+```
+
 ### 将宿主机的以 `MY_` 开头的环境变量传递给容器
 
 ```bash
